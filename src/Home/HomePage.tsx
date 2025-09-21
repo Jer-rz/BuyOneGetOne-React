@@ -64,7 +64,10 @@ const HomePage: React.FC = () => {
 
       return (
         <div key={p.id} className="product">
-          <p>{p.name}</p>
+          <div>
+            <p>{p.name}</p>
+            <p>{p.price}</p>
+          </div>
           <div className="buttons-container">
             {basketExists && (
               <div
