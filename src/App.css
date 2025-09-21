@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
+  width: 80vw;
+  height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 .logo {
@@ -27,6 +29,58 @@
   }
 }
 
+.product-container{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 1px;
+  border-radius: 12px;
+  background-color: #f5dc6e;
+}
+
+.product{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px solid #5a9ea3;
+}
+
+.save-container{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 12px;
+}
+
+.buttons-container{
+  display: flex;
+  
+}
+
+.buy-button{
+  width: 124px;
+  height: 24px;
+  background-color: #db6057;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.add-product-button{
+  width: 24px;
+  height: 24px;
+  background-color: #db6057;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -34,7 +88,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .read-the-docs {
